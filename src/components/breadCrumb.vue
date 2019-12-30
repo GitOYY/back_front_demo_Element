@@ -26,11 +26,10 @@
         height: 50px;
         display: flex;
         flex-direction: row;
-        background: #dfe6e9;
-        padding-left: 50px;
     }
     .icon{
         line-height: 50px;
+        padding-left: 50px;
         padding-right: 15px;
         display: flex;
         align-items: center;

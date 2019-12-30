@@ -53,11 +53,9 @@
                     <bread-crumb></bread-crumb>
                 </div>
                 <div class="router">
-                    <el-scrollbar>
-                        <keep-alive>
-                            <router-view></router-view>
-                        </keep-alive>
-                    </el-scrollbar>
+                    <keep-alive>
+                        <router-view></router-view>
+                    </keep-alive>
                 </div>
             </div>
         </div>
@@ -95,6 +93,7 @@ export default {
         position: absolute;
         display: flex;
         flex-direction: column;
+        min-width: 100%;
     }
     .header{
         .wh(100%, 60px);
@@ -104,6 +103,7 @@ export default {
     .container{
         .wh(100%, 100%);
         min-height: calc(100% - 60px);
+        /*min-width: calc(100% - 200px);*/
         display: flex;
         flex-direction: row;
     }
@@ -120,14 +120,16 @@ export default {
         background: white;
         display: flex;
         flex-direction: column;
+        min-width: calc(100% - 200px);
     }
     .breadCrumb{
         width: 100%;
+        background: #dfe6e9;
     }
     .router{
         .wh(100%, 100%);
         background: white;
         min-height: calc(100% - 110px);
-        overflow: scroll;
+        overflow: auto;
     }
 </style>
